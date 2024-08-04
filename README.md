@@ -37,6 +37,7 @@ The dashboard was developed using `Streamlit 1.23.1`. In particular,
 - Section 6: MongoDB query on the document of `publications.json`
 
 ## Database Techniques 
+Except basic database queries, I also implement several database techniques below:
 - Index the `year` and `keywords.name` fields of the MongoDB database (see `mongoIndex.sh`)
 - Create a view named `sorted_faculty_names` for the MySQL database (see `myseqlView.sql`)
 - Adopt a prepared statement for the MySQL database, which can be executed multiple times with different parameters efficiently (see the function `mysql_prepared_query()` in `utils.py`)
